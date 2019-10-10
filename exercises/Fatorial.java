@@ -10,10 +10,20 @@ public class Fatorial {
 		int n = sc.nextInt();
 		
 		int soma = 1;
-		for(int x = 1; x <= n; x++) {
+		if(n<0)
+			System.out.println("Not A valid Integer Entered");
+		else if(n>0)
+		{
+		
+			for(int x = 1; x <= n; x++) {
 			soma = soma * x;
 			}	
-		System.out.println(soma);
+			System.out.println(soma);
+		}
+		else 
+		{
+			System.out.println(1);
+		}
 		sc.close();
 		
 	}
